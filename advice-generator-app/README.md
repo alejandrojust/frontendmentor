@@ -1,3 +1,3 @@
-## advice-generator-app-main
+## advice-generator-app
 
-- Challenge Solution: [Website](https://alejandrojust.github.io/advice-generator-app-main/)
+- Challenge Solution: [Website](https://alejandrojust.github.io/frontendmentor/advice-generator-app/)
