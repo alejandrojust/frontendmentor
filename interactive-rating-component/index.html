@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <div class="container">
+
+    <!-- card shown -->
+    <section class="card-shown">
+      <div class="card-shown-header">
+        <img src="assets/images/icon-star.svg" alt="icon-star" class="card-shown-icon-star">
+        <h1 class="card-shown-title">How did we do?</h1>
+        <p class="card-shown-desc">
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+      </div>
+      <div class="card-shown-body">
+        <form action="index.html" class="form-ratings" method="dialog">
+          <div class="rates">
+            <input type="radio" name="rate" class="input__rate" id='one' value="1">
+            <label for="one" class="numbers">1</label>
+            <input type="radio" name="rate" class="input__rate" id='two' value="2">
+            <label for="two" class="numbers">2</label>
+            <input type="radio" name="rate" class="input__rate" id='three' value="3">
+            <label for="three" class="numbers">3</label>
+            <input type="radio" name="rate" class="input__rate" id='four' value="4">
+            <label for="four" class="numbers">4</label>
+            <input type="radio" name="rate" class="input__rate" id='five' value="5">
+            <label for="five" class="numbers">5</label>
+          </div>
+        <button name="rating-submit" type="submit" class="rating-submit-btn">S U B M I T</button>
+      </div>
+    </section>
+
+    <!-- card hidden -->
+    <section class="card-hidden">
+      <img src="assets/images/illustration-thank-you.svg" alt="icon-phone" class="card-hidden-icon">
+      <p class="card-hidden-selection">
+        <!-- javascript content -->Wow! You found a bug
+      </p>
+      <h1 class="card-hidden-title">Thank you!</h1>
+      <p class="card-hidden-desc">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+      <button name='return-btn' type="button" class="return__btn">Click to return</button>
+    </section>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alejandrojust</a>.
+  </div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    /* Mobile: 375px
+    Desktop: 1440px */
+
+    /* primary */
+    --blue: hsl(223, 87%, 63%);
+
+    /* secondary */
+    --paleBlue: hsl(223, 100%, 88%);
+    --lightRed: hsl(354, 100%, 66%);
+
+    /* neutral */
+    --gray: hsl(0, 0%, 59%);
+    --veryDarkBlue: hsl(209, 33%, 12%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+/* mobile */
+@media screen and (max-width: 639px) {
+    main {
+        margin-top: 2rem;
+    }
+
+    .visual__logo {
+        width: 4.5rem;
+        margin: 0 auto;
+    }
+
+    .visual__para {
+        margin-top: 1.2rem;
+        font-size: 15px;
+    }
+
+    .visual__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .visual__email {
+        height: 45px;
+        display: inline;
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .visual__email-error.active {
+        margin-bottom: 1rem;
+    }
+
+    .visual__button {
+        height: 45px;
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 0.75rem;
+    }
+
+    .dashboard__image {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 4rem;
+    } 
+}
+
+/* desktop */
+@media screen and (min-width: 640px) {
+    main {
+        margin-top: 5rem;
+    }
+
+    .visual__container {
+        min-width: 700px;
+    }
+
+    .dashboard__container {
+        min-width: 700px;
+    }
+
+    .visual__logo {
+        width: 90px;
+        margin: 0 auto;
+    }
+
+    .visual__title {
+        font-size: 45px;
+    }
+
+    .visual__para {
+        margin-top: 0.8rem;
+        font-size: 20px;
+    }
+
+    .visual__form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        min-width: 500px;
+        margin-top: 1rem;
+    }
+
+    .visual__email {
+        height: 50px;
+        width: 350px;
+        display: block;
+        font-size: 15px;
+    }
+
+    .visual__email-error {
+        margin-right: 4rem;
+    }
+
+    .visual__button {
+        height: 50px;
+        width: 170px;
+        font-size: 15px;
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .dashboard__image {
+        display: block;
+        width: 600px;
+        margin: 0 auto;
+        margin-top: 4rem;
+    } 
+
+    footer {
+        min-width: 700px;
+    }
+}
+
+main {
+    margin-bottom: 1rem;
+}
+
+.visual__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.visual__title {
+    margin-top: 2.5rem;
+}
+
+span {
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.email__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.visual__email {
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 1.5rem;
+    /* margin: 1.5rem auto; */
+    /* margin-bottom: 0; */
+    padding-left: 1.5rem;
+    border-radius: 1.5rem;
+    border-style: solid;
+    border-color: var(--paleBlue);
+    border-width: 0.1rem;
+}
+
+.visual__email::placeholder {
+    color: var(--paleBlue);
+}
+
+.visual__email:focus {
+    outline: none;
+}
+
+.visual__email.active {
+    display: block;
+    border-color: var(--lightRed);
+}
+
+.visual__email.active::placeholder {
+    color: var(--lightRed);
+}
+
+.visual__email-error {
+    display: none;
+}
+
+.visual__email-error.active {
+    display: inline;
+    color: var(--lightRed);
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 0.3rem;
+}
+
+.visual__button {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    border-style: none;
+    background-color: var(--blue);
+    color: white;
+}
+
+.visual__button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+footer {
+    margin-top: 3.5rem;
+    text-align: center;
+}
+
+.social__container {
+    display: flex;
+    width: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.social__button {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: var(--paleBlue);
+    border-width: 0.1rem;
+    background-color: white;
+    color: var(--blue);
+}
+
+.social__button:hover {
+    cursor: pointer;
+    background-color: var(--blue);
+    color: white;
+}
+
+.copyright {
+    margin-top: 2rem;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.attribution { 
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.attribution a { 
+    color: var(--blue); 
+}
+
+
+/* icon websites
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)  */

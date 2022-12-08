@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Mobile: 375px
+    Desktop: 1440px */
+
+    /* primary text */
+    --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+    --softRed: hsl(14, 88%, 65%);
+
+    /* background gradient */
+    --softViolet: hsl(273, 75%, 66%);
+    --softBlue: hsl(240, 73%, 65%);
+
+    /* neutral text */
+    --veryDarkGrayishBlue: hsl(237, 12%, 33%);
+    --darkGrayishBlue: hsl(240, 6%, 50%);
+
+    /* dividers */
+    --lightGrayishBlue: hsl(240, 5%, 91%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background: linear-gradient(var(--softViolet), var(--softBlue));
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* mobile */
+@media screen and (max-width: 640px) {
+    .card__body {
+        min-height: 525px;
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+
+    .image__container {
+        background-image: url('../images/bg-pattern-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: 27px -10px;
+        height: 120px;
+    }
+
+    .card__image {
+        height: 230px;
+        background-image: url('../images/illustration-woman-online-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 80%;
+        position: relative;
+        bottom: 120px;
+        left: 27px;
+    }
+
+    .card__title {
+        text-align: center;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 641px) {
+    .card__body {
+        min-height: 480px;
+        height: auto;
+        width: 900px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-right: 25px;
+    }
+
+    .image__container {
+        background-image: url('../images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: 220%;
+        background-position: -520px -265px;
+        min-height: 480px;
+        width: 405px;
+    }
+
+    .card__image {
+        height: 475px;
+        background-image: url('../images/illustration-woman-online-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: -75px 75px;
+        background-size: 110%;
+    }
+
+    .card__box {
+        background-image: url('../images/illustration-box-desktop.svg');
+        background-repeat: no-repeat;
+        position: relative;
+        top: 200px;
+        right: 93px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .card__content {
+        margin-right: 70px;
+        margin-left: 10px;
+        padding-bottom: 70px;
+    }
+
+    .card__title {
+        margin-top: 60px;
+        margin-bottom: 25px;
+    }
+}
+
+.card__body {
+    background-color: white;
+    border-radius: 20px;
+    margin: 150px auto;
+    margin-bottom: 20px;
+}
+
+.card__title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card__question {
+    margin: 20px 0px 20px 0px;
+}
+
+.question__title {
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--veryDarkGrayishBlue);
+}
+
+.question__title:hover {
+    cursor: pointer;
+    color: var(--softRed);
+}
+
+.card__question.active .question__title {
+    font-weight: 700;
+}
+
+.question__arrow {
+    margin-top: 7px;
+    transform: rotate(0deg);
+}
+
+.card__question.active .question__arrow {
+    transform: rotate(180deg);
+}
+
+.question__answer {
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: var(--darkGrayishBlue);
+    display: none;
+    line-height: 18px;
+}
+
+.card__question.active .question__answer {
+    display: block;
+}
+
+hr {
+    border-color: var(--lightGrayishBlue);
+    border-width: 0.01px;
+    border-style: solid;
+}
+
+/* footer */
+.attribution {
+    font-size: 15px;
+    text-align: center; 
+}
+
+.attribution a {
+    color: var(--lightGrayishBlue) 
+}
+
+
+/* picture example
+
+<!-- <picture class="card__picture">
+    <source media="(max-width: 640px)" srcset="./assets/images/illustration-woman-online-mobile.svg" width='85'/>
+    <img src="./assets/images/illustration-woman-online-desktop.svg" alt="illustration-woman-online-desktop" width="100%" class="card__image">
+    <div class="background__box">
+    </div>
+</picture> -->
+
+*/

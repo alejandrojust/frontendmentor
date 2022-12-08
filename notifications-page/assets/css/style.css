@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-VariableFont_wght.ttf');
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
+:root {
+    /* Mobile: 375px
+    Desktop: 1440px */
+
+    /* primary */
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+
+    /* neutral */
+    --white: hsl(0, 0%, 100%);
+    --veryLightGrayishBlue: hsl(210, 60%, 98%);
+    --lightGrayishBlue1: hsl(211, 68%, 94%);
+    --lightGrayishBlue2: hsl(205, 33%, 90%);
+    --grayishBlue: hsl(219, 14%, 63%);
+    --darkGrayishBlue: hsl(219, 12%, 42%);
+    --veryDarkBlue: hsl(224, 21%, 14%);
+}   
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* mobile */
+@media screen and (max-width: 375px) {
+    main {
+        padding: 0.5rem;
+    }
+
+    .container__notifications {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .counter__notifications {
+        margin: 0 auto;
+    }
+
+    #notification__card-default {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        padding: 0.2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .image__notification {
+        margin: 0.5rem auto;
+    }
+
+    .counter__notifications {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .number__notifications {
+        margin: 0.2rem auto;
+    }
+
+    .para__notifications {
+        margin-top: 0.5rem;
+    } 
+
+    .picture__card {
+        margin: 0 auto;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 376px) {
+    main {
+        padding: 1.5rem;
+    }
+
+    .container__notifications {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    #notification__card-default {
+        display: flex;
+        flex-direction: row;
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
+
+    .counter__notifications {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .content__card {
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    body {
+        background-color: var(--lightGrayishBlue1);
+    }
+
+    main {
+        max-width: 680px;
+        background-color: var(--veryLightGrayishBlue);
+        border-radius: 0.5rem;
+        margin: 30px auto;
+    }
+}
+
+.title__notifications {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--veryDarkBlue);
+    margin-right: 0.6rem;
+}
+
+.number__notifications {
+    border-radius: 0.4rem;
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    font-weight: 800;
+    height: 24px;
+    width: 30px;
+}
+
+.para__notifications:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+#notification__card-default {
+    margin-top: 0.8rem;
+    min-height: 60px;
+}
+
+.notification__card {
+    background-color: var(--veryLightGrayishBlue);
+}
+
+.notification__card.active{
+    background-color: var(--lightGrayishBlue1);
+}
+
+.image__notification {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.content__card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.username__card {
+    font-weight: 800;
+    color: var(--veryDarkBlue);
+    margin-right: 0.2rem;
+}
+
+.username__card:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.para__card {
+    color: var(--veryDarkBlue);
+}
+
+.time__card {
+    margin-top: 0.2rem;
+    color: var(--grayishBlue);
+}
+
+.post__card {
+    color: var(--darkGrayishBlue);
+    font-weight: 800;
+    margin-left: 0.2rem;
+}
+
+.post__card:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.club__card {
+    color: var(--blue);
+    font-weight: 800;
+    margin-left: 0.2rem;
+}
+
+.club__card:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.picture__card {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.picture__card:hover {
+    cursor: pointer;
+}
+
+.unread__card {
+    display: none;
+}
+
+.unread__card.active {
+    display: inline-block;
+    font-size: 8px;
+    vertical-align: middle;
+}
+
+.notification__card-message {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: var(--lightGrayishBlue2);
+    border-width: 0.12rem;
+    padding: 1rem;
+}
+
+.notification__card-message:hover {
+    cursor: pointer;
+    background-color: var(--lightGrayishBlue1);
+}
+
+footer {
+    font-size: 15px; 
+    text-align: center; 
+}
+
+footer a {
+    color: hsl(228, 45%, 44%); 
+}

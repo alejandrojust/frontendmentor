@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    /* - Mobile: 375px
+    - Desktop: 1440px */
+
+    /* colors */
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --darkBlueOpa: hsl(213, 19%, 18%, 0.5);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+
+    /* font */
+    --fontPrimary: 'Overpass', sans_serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    font-family: var(--fontPrimary);
+}
+
+.container {
+    background-color: var(--darkBlueOpa);
+    border-radius: 15px;
+    margin: 200px auto;
+    margin-bottom: 20px;
+    height: 400px;
+    width: 350px;
+    padding: 25px;
+}
+
+.container.active {
+    height: 430px;
+}
+
+.card-shown-icon-star {
+    border-radius: 30px;
+    background-color: var(--darkBlue);
+    padding: 15px;
+}
+
+.card-shown-title {
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 20px;
+    color: var(--white);
+}
+
+.card-shown-desc {
+    padding-top: 20px;
+    color: var(--lightGrey);
+    line-height: 22px;
+}
+
+.card-shown-body {
+    margin-top: 15px;
+}
+
+input[type='radio'] {
+    display: none;
+    border-radius: 50%;
+}
+
+.rates {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0 25px 0;
+    /* padding: 10px; */
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 2rem;
+    border-color: transparent;
+    background-color: var(--darkBlue);
+    color: var(--lightGrey);
+    cursor: pointer;
+}
+
+input:checked + label {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.numbers:hover {
+    background-color: var(--mediumGrey);
+    color: var(--white);
+}
+
+.rating-submit-btn {
+    display: inline-block;
+    border-radius: 30px;
+    border-color: transparent;
+    height: 50px;
+    width: 300px;
+    /* margin-top: 30px; */
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.rating-submit-btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/* rating functionality */
+.card-shown {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-shown.active {
+    display: none;
+}
+
+/* hidden card */
+.card-hidden {
+    text-align: center;
+    /* flex-direction: column; */
+    display: none;
+}
+
+.card-hidden.active {
+    text-align: center;
+    /* flex-direction: column; */
+    display: inline-block;
+}
+
+.card-hidden-icon {
+    margin-top: 20px;   
+    /* height: 130px;
+    width: 220px; */
+}
+
+.card-hidden-selection {
+    background-color: var(--darkBlue);
+    border-radius: 30px;
+    padding: 5px;
+    width: 200px;
+    height: 30px;
+    margin: 30px auto;
+    color: var(--orange);
+}
+
+.card-hidden-title {
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.card-hidden-desc {
+    padding-top: 10px;
+    color: var(--lightGrey);
+    line-height: 22px;
+}
+
+.return__btn {
+    margin: 25px;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 30px;
+    border-color: transparent;
+    height: 25px;
+    width: 150px;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.return__btn:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/* desktop */
+@media screen and (min-width: 640px) {
+    .container {
+        width: 400px;
+        padding: 25px 30px;
+        border-radius: 25px;
+    }
+
+    .numbers {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .rating-submit-btn {
+        width: 340px;
+    }
+
+    .card-shown-title {
+        font-weight: 700;
+        /* font-size: 25px;
+        padding-top: 20px;
+        color: var(--white); */
+    }
+
+    .return__btn {
+        height: 30px;
+        width: 170px;
+    }
+}
+
+/* footer */
+.attribution { 
+    font-size: 15px; text-align: center; 
+    color: white;
+}
+
+.attribution a {
+     color: hsl(228, 72%, 69%); 
+}

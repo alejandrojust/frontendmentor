@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/main.js" defer></script>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <div class="body__content">
+    <header>
+      <img src="./assets/images/logo.svg" alt="logo" class="img__logo">
+      <img src="./assets/images/icon-menu.svg" alt="icon-menu" class="img__menu">
+      <nav>
+        <div class="container__items">
+          <img src="./assets/images/icon-close-menu.svg" alt="icon-close-menu" class="img__close-menu">
+          <div class="content__items">
+            <p class="para__items" id="features">
+              Features
+              <img src="./assets/images/icon-arrow-down.svg" alt="icon-arrow-down" class='img__arrow'>
+            </p>
+            <div class="data__items" id="features-list">
+              <p class="para__items-list">
+                <img src="./assets/images/icon-todo.svg" alt="icon-todo" class="img__items-list">
+                Todo List
+              </p>
+              <p class="para__items-list">
+                <img src="./assets/images/icon-calendar.svg" alt="icon-calendar" class="img__items-list">
+                Calendar
+              </p>
+              <p class="para__items-list">
+                <img src="./assets/images/icon-reminders.svg" alt="icon-reminders" class="img__items-list">
+                Reminders
+              </p>
+              <p class="para__items-list">
+                <img src="./assets/images/icon-planning.svg" alt="icon-planning" class="img__items-list">
+                Planning
+              </p>
+            </div>
+          </div>
+          <div class="content__items">
+            <p class="para__items" id="company">
+              Company
+              <img src="./assets/images/icon-arrow-down.svg" alt="icon-arrow-down" class="img__arrow">
+            </p>
+            <div class="data__items" id="company-list">
+              <p class="para__items-list">History</p>
+              <p class="para__items-list">Our Team</p>
+              <p class="para__items-list">Blog</p>
+            </div>
+          </div>
+          <p class="para__items">Careers</p>
+          <p class="para__items">About</p>
+        </div>
+        <div class="content__account">
+          <p class="para__account">Login</p>
+          <p class="para__account" id="register">Register</p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <picture class="content__img-hero">
+        <source media="(min-width: 840px)" srcset="./assets/images/image-hero-desktop.png" class="desktop__img-hero">
+        <img src="./assets/images/image-hero-mobile.png" alt="image-hero-mobile" class="img__hero">
+      </picture>
+      <div class="content__visual">
+        <h1 class="title__visual">
+          Make remote work
+        </h1>
+        <p class="para__visual">
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="button__visual">
+          Learn more
+        </button>
+        <div class="content__clients">
+          <img src="./assets/images/client-databiz.svg" alt="client-databiz" class="img__clients">
+          <img src="./assets/images/client-audiophile.svg" alt="client-audiophile" class="img__clients">
+          <img src="./assets/images/client-meet.svg" alt="client-meet" class="img__clients">
+          <img src="./assets/images/client-maker.svg" alt="client-maker" class="img__clients">
+        </div>
+      </div>
+    </main>
+    <footer>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Alejandrojust</a>.
+    </footer>
+  </div>
+</body>
+</html>

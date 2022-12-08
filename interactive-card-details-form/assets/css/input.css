@@ -1,0 +1,35 @@
+.data__input {
+    border-radius: 0.4rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: var(--lightGrayishViolet);
+    height: 40px;
+    width: 100%;
+    padding-left: 0.8rem;
+    margin-top: 0.3rem;
+    font-size: 18px;
+}
+
+.data__input::placeholder {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: var(--lightGrayishViolet);
+    letter-spacing: 0.04rem;
+}
+
+.data__input.active {
+    border-color: var(--red);
+}
+
+#data__input-month {
+    width: 42%;
+}
+
+#data__input-year {
+    width: 42%;
+    margin-left: 0.2rem;
+}
+
+#data__input-cvc {
+    width: 100%;
+}

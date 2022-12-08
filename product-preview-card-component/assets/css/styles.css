@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root {
+    /* - Mobile: 375px
+    - Desktop: 1440px */
+
+    /* primary */
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* neutral */
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    /* fonts */
+    --fontPrimary: 'Montserrat', sans-serif;
+    --fontSecond: 'Fraunces', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-size: 14px; */
+    background-color: var(--cream);
+}
+
+/* desktop card */
+@media screen and (min-width: 641px) {
+    .container {
+        height: 450px;
+        width: 600px;
+        margin: 200px auto;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);}
+
+    .card-image {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .card-text {
+        width: 300px;
+    }
+
+    .card-product {
+        padding-top: 30px;
+    }
+
+    .card-name {
+        padding-top: 20px;
+        margin-right: 20px;
+    }
+
+    .card-description {
+        padding-top: 25px;
+    }
+
+    .card-prices {
+        padding-top: 30px;
+    }
+
+    .card-btn {
+        height: 45px;
+        width: 240px;
+        margin-top: 30px;
+    }
+}
+
+/* mobile card */
+@media screen and (max-width: 640px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 620px;
+        width: 375px;
+        margin: 20px auto;
+    }
+
+    .card-image {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card-product {
+        padding-top: 15px;
+    }
+
+    .card-name {
+        padding-top: 10px;
+    }
+
+    .card-description {
+        padding-top: 15px;
+        margin-right: 20px;
+    }
+
+    .card-prices {
+        padding-top: 20px;
+    }
+
+    .card-btn {
+        height: 50px;
+        width: 320px;
+        margin-top: 15px;
+    }
+}
+
+.container {
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.card-text {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: inline-block;
+}
+
+.card-product {
+    font-family: var(--fontPrimary);
+    font-size: 12px;
+    color: var(--darkGrayishBlue);
+}
+
+.card-name {
+    font-family: var(--fontSecond);
+    line-height: 30px;
+}
+
+.card-description {
+    font-family: var(--fontPrimary);
+    font-size: 15px;
+    color: var(--darkGrayishBlue);
+    line-height: 23px;
+}
+
+/* card price */
+.card-prices {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.price-before {
+    font-family: var(--fontSecond);
+    font-size: 32px;
+    color: var(--darkCyan);
+}
+
+.price-after {
+    font-family: var(--fontPrimary);
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 10px;
+    text-decoration: line-through;
+    color: var(--darkGrayishBlue);
+}
+
+/* boton add to card */
+.card-btn {
+    font-family: var(--fontPrimary);
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 7px;
+    border-color: transparent;
+    color: var(--white);
+    background-color: var(--darkCyan);
+}
+
+.card-btn:hover {
+    background-color: var(--veryDarkBlue);
+}
+
+/* icon del carrito */
+.icon-card {
+    padding-right: 10px;
+}
+
+/* footer */
+.attribution { 
+    font-size: 14px; text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}

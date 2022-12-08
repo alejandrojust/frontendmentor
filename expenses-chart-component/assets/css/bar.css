@@ -1,0 +1,28 @@
+#bar-mon {
+    height: 20%;
+}
+
+#bar-tue {
+    height: 40%;
+}
+
+#bar-wed {
+    height: 62%;
+    background-color: hsl(186, 34%, 60%);
+}
+
+#bar-thu {
+    height: 36%;
+}
+
+#bar-fri {
+    height: 28%;
+}
+
+#bar-sat {
+    height: 50%;
+}
+
+#bar-sun {
+    height: 35%;
+}

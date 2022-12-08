@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://kit.fontawesome.com/8ee193c03f.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/main.js" defer></script>
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+<body>
+  <main>
+    <section class="section__visual">
+      <div class="visual__container">
+        <img src="./assets/images/logo.svg" alt="logo" class="visual__logo">
+        <h1 class="visual__title">
+          <span>We are launching</span> soon!
+        </h1>
+        <p class="visual__para">
+          Subscribe and get notified
+        </p>
+        <form action="/index.html" class="visual__form" method="get">
+          <div class="email__container">
+            <input type="email" placeholder="Your email address..." class="visual__email" required>
+            <p class="visual__email-error">Please provide a valid email address</p> 
+          </div>
+          <button type="submit" class="visual__button">
+            Notify Me
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="section__dashboard">
+      <div class="dashboard__container">
+        <img src="./assets/images/illustration-dashboard.png" alt="illustration-dashboard" class="dashboard__image">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="social__container">
+      <button type="button" class="social__button" onclick="window.location.href='https://www.facebook.com'; " value='facebook' formtarget="_blank">
+        <i class="fa-brands fa-facebook-f fa-lg"></i>
+      </button>
+      <button type="button" class="social__button" onclick="window.location.href='https://twitter.com/'; " value="twitter" formtarget="_blank">
+        <i class="fa-brands fa-twitter fa-lg"></i>
+      </button>
+      <button type="button" class="social__button" onclick="window.location.href='https://instagram.com/'; " value="instagram" formtarget="_blank">
+        <i class="fa-brands fa-instagram fa-lg"></i>
+      </button>
+    </div>
+    <p class="copyright">
+      &copy; Copyright Ping. All rights reserved.
+    </p>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Alejandrojust</a>.
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="card__container">
+      <div class="card__display">
+        <div class="card__content">
+          <div class="card__back">
+            <p class="back__para">
+              000
+            </p>
+          </div>  
+          <div class="card__front">
+            <img src="./assets/images/card-logo.svg" alt="card-logo" class="card__front-logo">
+            <div class="front__content">
+              <p class="front__number">
+                0000 0000 0000 0000
+              </p>
+              <div class="front__info">
+                <p class="front__para" id="front__name">Jane Appleseed</p>
+                <div class="container__front">
+                  <p class="front__para" id="front__month">00</p>
+                  <p class="front__para">/</p>
+                  <p class="front__para" id="front__year">00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="data__container">
+      <form target="_self" class="card__data" method="get">
+        <div class="data__content">
+          <p class="data__para">
+            Cardholder Name
+          </p>
+          <input type="text" name='card-name' maxlength="40" placeholder="e.g. Jane Appleseed" class="data__input" id="data__input-name" required>
+        </div>
+        <div class="data__content" >
+          <p class="data__para">
+            Card Number
+          </p>
+          <input type="tel" name='card-number' inputmode="numeric" pattern="[0-9\s]{13,19}" minlength="16" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" class="data__input" required>
+          <p class="data__error" id="error-number">
+            Wrong format, numbers only
+          </p>
+        </div>
+        <div class="content__container">
+          <div class="data__content" >
+            <p class="data__para">
+              Exp. Date (MM/YY)
+            </p>
+            <input type="tel" name='card-month' inputmode="numeric" minlength="2" maxlength="2" placeholder="MM" class="data__input" id="data__input-month" required>
+            <input type="tel" name='card-year' inputmode="numeric" minlength="2" maxlength="2" placeholder="YY" class="data__input" id="data__input-year" required>
+            <p class="data__error" id="error-expiration">
+              Can't be blank
+            </p>
+          </div>
+          <div class="data__content" >
+            <p class="data__para">
+              CVC
+            </p>
+            <input type="tel" name='card-cvc' inputmode="numeric" minlength="3" maxlength="3" placeholder="e.g. 123" class="data__input" id="data__input-cvc" required>
+            <p class="data__error" id="error-cvc">
+              Can't be blank
+            </p>
+          </div>
+        </div>
+        <button type="submit" class="data__button"> 
+          Confirm
+        </button>
+      </form>
+      <div class="card__added">
+        <img src="./assets/images/icon-complete.svg" alt="icon-complete" class="card__added-icon">
+        <h2 class="added__title">Thank you!</h2>
+        <p class="added__para">We've added your card details</p>
+        <button type="button" class="data__button" id="added__button"> 
+          Continue
+        </button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alejandrojust</a>.
+  </footer>
+</body>
+</html>

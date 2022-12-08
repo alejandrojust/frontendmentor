@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('../css/bar.css');
+
+:root {
+    /* Mobile: 375px
+    Desktop: 1440px */
+
+    /* primary */
+    --cyan: hsl(186, 34%, 60%);
+    --softRed: hsl(10, 79%, 65%);
+
+    /* neutral */
+    --darkBrown: hsl(25, 47%, 15%);
+    --mediumBrown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --veryPaleOrange: hsl(33, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--cream);
+}
+
+main {
+    margin: 8vh auto;
+    margin-bottom: 1rem;
+    min-width: 220px;
+}
+
+@media screen and (max-width: 320px) {
+    .card__balance {
+        padding: 0.5rem 0.4rem;
+    }
+
+    .card__spending {
+        padding: 0.5rem 0.4rem;
+    }
+
+    .data__days {
+        max-width: 1.5rem;
+    }
+
+    .info__days {
+        padding: 0.1rem;
+        font-size: 14px;
+    }
+
+    .bar__days {
+        min-width: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 321px) {
+    main {
+        max-width: 375px;
+    }
+
+    .card__balance {
+        flex-direction: row;
+        padding: 1rem 0.8rem;
+    }
+
+    .card__spending {
+        padding: 1rem 0.8rem;
+    }
+
+    .bar__days {
+        width: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .info__days {
+        padding: 0.1rem;
+        font-size: 16px;
+    }
+
+    .bar__days:hover .info__days {
+        bottom: 1.8rem;
+        right: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    main {
+        max-width: 450px;
+    }
+
+    .bar__days {
+        width: 2.6rem;
+    }
+
+    .info__days {
+        padding: 0.4rem;
+    }
+
+    .bar__days:hover .info__days {
+        bottom: 2.6rem;
+        right: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 451px) {
+    .card__balance {
+        padding: 1rem 1.2rem;
+    }
+
+    .card__spending {
+        padding: 1.2rem 1.8rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    main {
+        margin: 8vh 0.4rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.card__balance {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.7rem;
+    background-color: var(--softRed);
+}
+
+.para__balance {
+    color: var(--veryPaleOrange);
+}
+
+.amount__balance {
+    color: var(--veryPaleOrange);
+    margin-top: 0.3rem;
+}
+
+hr {
+    border-color: var(--cream);
+    border-style: solid;
+    border-width: thin;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.card__spending {
+    border-radius: 0.7rem;
+    background-color: var(--veryPaleOrange);
+    margin-top: 1rem;
+}
+
+.content__days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25vh;
+}
+
+.data__days {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    min-width: 1.5rem;
+}
+
+.info__days {
+    display: none;
+    border-radius: 0.4rem;
+    background-color: var(--darkBrown);
+    color: var(--veryPaleOrange);
+    margin-bottom: 0.4rem;
+}
+
+.bar__days {
+    border-radius: 0.2rem;
+    background-color: var(--softRed);
+}
+
+.bar__days:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.bar__days:hover .info__days {
+    position: relative;
+    display: inline-block;
+}
+
+/* 
+    Javascript way
+
+    .bar__days.active .info__days {
+    position: relative;
+    bottom: 2.6rem;
+    right: 0.9rem;
+    display: inline-block;
+} */
+
+.para__days {
+    font-size: 14px;
+    color: var(--mediumBrown);
+    margin-top: 0.5rem;
+}
+
+.content__month {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.para__month {
+    font-size: 16px;
+    color: var(--mediumBrown);
+}
+
+.data__last-month {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    text-align: right;
+}
+
+footer {
+    font-size: 15px; 
+    text-align: center; 
+}
+
+footer a {
+    color: hsl(228, 45%, 44%); 
+}
