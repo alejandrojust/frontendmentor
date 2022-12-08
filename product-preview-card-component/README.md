@@ -1,3 +1,3 @@
-## product-preview-card-component-main
+## product-preview-card-component
 
-- Challenge Solution: [Website](https://alejandrojust.github.io/product-preview-card-component-main/)
+- Challenge Solution: [Website](https://alejandrojust.github.io/frontendmentor/product-preview-card-component/)
