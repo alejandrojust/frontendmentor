@@ -1,3 +1,3 @@
-## time-tracking-dashboard-main
+## time-tracking-dashboard
 
-- Challenge Solution: [Website](https://alejandrojust.github.io/time-tracking-dashboard-main/)
+- Challenge Solution: [Website](https://alejandrojust.github.io/frontendmentor/time-tracking-dashboard/)
