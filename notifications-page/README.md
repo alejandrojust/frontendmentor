@@ -1,3 +1,3 @@
-## notifications-page-main
+## notifications-page
 
-- Challenge Solution: [Website](https://alejandrojust.github.io/notifications-page-main/)
+- Challenge Solution: [Website](https://alejandrojust.github.io/frontendmentor/notifications-page/)
