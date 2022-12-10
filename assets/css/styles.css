@@ -77,8 +77,8 @@ a {
 /*=============== THEME ===============*/
 .change-theme {
     position: absolute;
-    bottom: 5rem;
-    right: 0;
+    top: -1.5rem;
+    right: 0rem;
     font-size: 1.25rem;
     color: var(--title-color);
     cursor: pointer;
@@ -234,11 +234,6 @@ header {
         grid-template-columns: 332px;
         justify-content: center;
     }
-  
-    .filters__content {
-        width: 332px;
-        margin: 3rem auto;
-    }
 }
 
 @media screen and (min-width: 776px) {
@@ -251,8 +246,8 @@ header {
 /* For large devices */
 @media screen and (min-width: 992px) {
     .change-theme {
-        bottom: 4.8rem;
-        right: 2.3rem;
+        top: -1.5rem;
+        right: 2.25rem;
     }
 
     .projects__modal {
